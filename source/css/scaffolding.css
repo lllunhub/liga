@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "OpenSans", "Aria", sans-serif;
+  color: #393d43;
+
+  background-color: #fcfeff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: flex;
+  align-items: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: transsparrent;
+
+  transition: background-color 5000s ease-in-out 0s;
+
+  -webkit-text-fill-color: #393d43;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.body-inert {
+  position: relative;
+}
+
+.body-inert::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.8);
+}

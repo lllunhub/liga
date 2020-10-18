@@ -1,0 +1,140 @@
+/* Service */
+.service {
+  padding: 120px 0;
+}
+
+@media (max-width: 767px) {
+  .service {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .service {
+    padding: 60px 0;
+  }
+}
+
+/* Container */
+.service__container {
+  display: grid;
+  grid-template-columns: 392px minmax(280px, 625px);
+  justify-content: space-between;
+  align-items: start;
+
+  column-gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .service__container {
+    grid-template-columns: 1fr;
+
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .service__container {
+    row-gap: 50px;
+  }
+}
+
+/* Title */
+.service__title {
+  position: relative;
+
+  margin: 0;
+  padding-bottom: 296px;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  color: #393d43;
+}
+
+@media (max-width: 767px) {
+  .service__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .service__title {
+    padding-bottom: 0;
+
+    font-size: 24px;
+  }
+}
+
+.service__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 274px;
+  height: 280px;
+  margin-left: 20px;
+
+  background-image: url("../img/service-decore.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .service__title::before {
+    left: 50%;
+
+    margin-left: -40px;
+
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 400px) {
+  .service__title::before {
+    display: none;
+  }
+}
+
+/* List */
+.service__list {
+  display: grid;
+  margin: 0;
+  padding-left: 27px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: #393d43;
+  row-gap: 30px;
+}
+
+.service__list li p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 180%;
+  color: #393d43;
+}
+
+@media (max-width: 400px) {
+  .service__list li p {
+    font-size: 14px;
+  }
+}
+
+.service__list li p:first-child {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: #393d43;
+}
+
+@media (max-width: 400px) {
+  .service__list li p:first-child {
+    font-size: 18px;
+  }
+}

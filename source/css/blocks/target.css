@@ -1,0 +1,102 @@
+/* Target */
+.target {
+  padding: 120px 0;
+
+  background-color: #fcfeff;
+}
+
+@media (max-width: 767px) {
+  .target {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .target {
+    padding: 60px 0;
+  }
+}
+
+/* Container */
+.target__container {
+  display: grid;
+
+  row-gap: 30px;
+}
+
+/* Title */
+.target__title {
+  max-width: 1082px;
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #393d43;
+
+  justify-self: center;
+}
+
+@media (max-width: 410px) {
+  .target__title {
+    font-size: 24px;
+  }
+}
+
+/* Lead */
+.target__lead {
+  max-width: 804px;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+  color: #485057;
+
+  justify-self: center;
+}
+
+@media (max-width: 410px) {
+  .target__lead {
+    font-size: 14px;
+  }
+}
+
+/* Popup */
+.target__popup {
+  width: 100%;
+  max-width: 284px;
+  padding: 12px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #393d43;
+  text-decoration: none;
+
+  background-color: #f7b519;
+  border-radius: 6px;
+
+  transition: 0.3s;
+
+  justify-self: center;
+}
+
+@media (max-width: 329px) {
+  .target__popup {
+    font-size: 16px;
+  }
+}
+
+.target__popup:hover,
+.target__popup:focus {
+  background-color: #f7b519;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+.target__popup:active {
+  background-color: #f7b513;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,145 @@
+/* Get */
+.get {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 767px) {
+  .get {
+    padding-top: 45px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .get {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Container */
+.get__container {
+  display: grid;
+
+  row-gap: 70px;
+}
+
+@media (max-width: 400px) {
+  .get__container {
+    row-gap: 30px;
+  }
+}
+
+/* Title */
+.get__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #393d43;
+}
+
+@media (max-width: 410px) {
+  .get__title {
+    font-size: 24px;
+  }
+}
+
+/* List */
+.get__list {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1030px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  column-gap: 20px;
+
+  justify-self: center;
+}
+
+@media (max-width: 916px) {
+  .get__list {
+    grid-template-columns: repeat(2, max-content);
+
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 546px) {
+  .get__list {
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+  }
+}
+
+/* List li */
+.get__list li {
+  position: relative;
+
+  padding-top: 177px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #393d43;
+}
+
+@media (max-width: 400px) {
+  .get__list li {
+    font-size: 14px;
+  }
+}
+
+.get__list li:nth-child(1) {
+  max-width: 236px;
+}
+
+.get__list li:nth-child(2) {
+  max-width: 250px;
+}
+
+.get__list li:nth-child(3) {
+  max-width: 350px;
+}
+
+@media (max-width: 916px) {
+  .get__list li:nth-child(3) {
+    grid-column: 1 / -1;
+
+    justify-self: center;
+  }
+}
+
+.get__list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 200px;
+  height: 157px;
+
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+}
+
+.get__list li:nth-child(1)::before {
+  background-image: url("../img/get-01.svg");
+}
+
+.get__list li:nth-child(2)::before {
+  background-image: url("../img/get-02.svg");
+}
+
+.get__list li:nth-child(3)::before {
+  background-image: url("../img/get-03.svg");
+}

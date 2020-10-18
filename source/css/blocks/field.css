@@ -1,0 +1,101 @@
+/* Field */
+.field {
+  padding: 120px 0;
+
+  background-color: #485057;
+}
+
+@media (max-width: 767px) {
+  .field {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .field {
+    padding: 60px 0;
+  }
+}
+
+/* Container */
+.field__container {
+  position: relative;
+
+  display: grid;
+  grid-row: 30px;
+  justify-content: start;
+}
+
+.field__container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  width: 406px;
+  height: 319px;
+
+  background-image: url("../img/field-decore.svg");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 950px) {
+  .field__container::before {
+    display: none;
+  }
+}
+
+/* Title */
+.field__title {
+  max-width: 667px;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+@media (max-width: 410px) {
+  .field__title {
+    font-size: 24px;
+  }
+}
+
+.field__title span {
+  color: #f7b519;
+}
+
+/* Lead */
+.field__lead {
+  max-width: 446px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+@media (max-width: 400px) {
+  .field__lead {
+    font-size: 14px;
+  }
+}
+
+/* Popup */
+.field__popup {
+  width: 100%;
+  max-width: 278px;
+  padding: 12px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #393d43;
+  text-decoration: none;
+
+  background-color: #ffffff;
+  border-radius: 6px;
+}

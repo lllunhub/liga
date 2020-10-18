@@ -1,0 +1,87 @@
+/* Whom */
+.whom {
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  background-color: rgba(234, 238, 239, 0.25);
+}
+
+@media (max-width: 767px) {
+  .whom {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .whom {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Container */
+.whom__container {
+  display: grid;
+
+  row-gap: 30px;
+}
+
+/* Title */
+.whom__title {
+  position: relative;
+
+  margin: 0;
+  padding-top: 237px;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #393d43;
+}
+
+@media (max-width: 400px) {
+  .whom__title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.whom__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 380px;
+  height: 237px;
+
+  background-image: url("../img/whom-decore.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-50%);
+}
+
+/* Lead */
+.whom__lead {
+  max-width: 803px;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+  color: #393d43;
+
+  justify-self: center;
+}
+
+@media (max-width: 400px) {
+  .whom__lead {
+    font-size: 14px;
+  }
+}
+
+.whom__lead strong {
+  font-weight: 600;
+}

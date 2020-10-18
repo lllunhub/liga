@@ -1,0 +1,145 @@
+/* Cause */
+.cause {
+  padding-top: 240px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .cause {
+    padding-top: 200px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cause {
+    padding-top: 180px;
+    padding-bottom: 30px;
+  }
+}
+
+/* Container */
+.cause__container {
+  display: grid;
+
+  row-gap: 70px;
+}
+
+@media (max-width: 400px) {
+  .cause__container {
+    row-gap: 30px;
+  }
+}
+
+/* Title */
+.cause__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #393d43;
+}
+
+@media (max-width: 410px) {
+  .cause__title {
+    font-size: 24px;
+  }
+}
+
+/* List */
+.cause__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+@media (max-width: 700px) {
+  .cause__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* List li */
+.cause__list li {
+  display: grid;
+  padding: 30px;
+
+  row-gap: 12px;
+
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(72, 80, 87, 0.04);
+}
+
+@media (max-width: 400px) {
+  .cause__list li {
+    padding: 30px 20px;
+  }
+}
+
+/* List li h3 */
+.cause__list li h3 {
+  position: relative;
+
+  margin: 0;
+  padding-top: 75px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 180%;
+  color: #485057;
+}
+
+/* List li h3 */
+.cause__list li h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 64px;
+  height: 65px;
+
+  background-repeat: no-repeat;
+}
+
+.cause__list li:nth-child(1) h3::before {
+  background-image: url("../img/cause-01.svg");
+}
+
+.cause__list li:nth-child(2) h3::before {
+  background-image: url("../img/cause-02.svg");
+}
+
+.cause__list li:nth-child(3) h3::before {
+  background-image: url("../img/cause-03.svg");
+}
+
+.cause__list li:nth-child(4) h3::before {
+  background-image: url("../img/cause-04.svg");
+}
+
+.cause__list li:nth-child(5) h3::before {
+  background-image: url("../img/cause-05.svg");
+}
+
+.cause__list li:nth-child(6) h3::before {
+  background-image: url("../img/cause-06.svg");
+}
+
+/* List li p */
+.cause__list li p {
+  max-width: 265px;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 180%;
+  color: #485057;
+}

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лига качества</title>
+  <meta name="description" content="Сайт компании ЛИГА КАЧЕСТВА">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon.png">
+</header>
+
+<body>
+
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="header">
+    <div class="header__container container">
+      <!-- Логотип -->
+      <a class="header__logo" href="/">
+        <img class="header__image-big" src="img/logo-header.svg" alt="Логотип компании Лига качества">
+        <img class="header__image-small" src="img/logo-header-small.svg" alt="Логотип компании Лига качества">
+      </a>
+      <!-- Открыть меню -->
+      <button class="header__nav-open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- Навигация -->
+      <nav class="header__nav nav nav--closed">
+        <div class="nav__container container">
+          <div class="nav__wrap">
+            <!-- Закрыть меню -->
+            <button class="nav__close-nav" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+              <svg class="nav__close-icon" width="18" height="18" aria-hidden="true">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+            <!-- Логотип -->
+            <a class="nav__logo" href="/">
+              <img class="nav__image" src="img/logo-header.svg" alt="Логотип компании Лига качества">
+            </a>
+            <!-- Ссылки на другие страницы -->
+            <div class="nav__page-wrap">
+              <a class="nav__security" href="/">Охрана труда</a>
+              <a class="nav__center" href="/">Учебный центр</a>
+            </div>
+            <!-- Cписок страниц -->
+            <ul class="nav__page-list">
+              <li class="nav__page-item">
+                <a class="nav__page-link nav__page-link--active">Профессиональные риски</a>
+              </li>
+              <li class="nav__page-item">
+                <a class="nav__page-link" href="/">Документы по охране труда</a>
+              </li>
+              <li class="nav__page-item">
+                <a class="nav__page-link" href="/">Специальная оценка условий труда</a>
+              </li>
+              <li class="nav__page-item">
+                <a class="nav__page-link" href="/">Специальная оценка условий труда</a>
+              </li>
+            </ul>
+            <!-- Кнопка показать больше -->
+            <button class="nav__page-toggle" type="button">
+              <svg class="nav__page-icon" width="16" height="16" aria-hidden="true">
+                <use class="nav__page-icon-top visually-hidden" xlink:href="#icon-arrow-top"></use>
+                <use class="nav__page-icon-bottom" xlink:href="#icon-arrow-bottom"></use>
+              </svg>
+            </button>
+            <!-- Заголовок списка -->
+            <h2 class="nav__title">Профессиональные риски</h2>
+            <!-- Список страницы -->
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="/">Об услуге</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Штрафы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Подробно об этапах</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Шаги для проведения оценки</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Причины работать с нами</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Наши клиенты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Где мы работаем</a>
+              </li>
+            </ul>
+            <!-- Список других страниц -->
+            <ul class="nav__another-list">
+              <li class="nav__another-item">
+                <a class="nav__another-link" href="/">О компании</a>
+              </li>
+              <li class="nav__another-item">
+                <a class="nav__another-link" href="/">Контакты</a>
+              </li>
+              <li class="nav__another-item">
+                <a class="nav__another-link" href="/">Лицензии</a>
+              </li>
+              <li class="nav__another-item">
+                <a class="nav__another-link" href="/">Курсы</a>
+              </li>
+              <li class="nav__another-item">
+                <a class="nav__another-link" href="/">Публикации</a>
+              </li>
+            </ul>
+            <!-- Копирайтинг и контакты -->
+            <div class="nav__copyright-wrap">
+              <p class="nav__copyright">2020 © Компания «Лига Качества».</p>
+              <a class="nav__politic" href="/" target="_blank">Политика конфиденциальности</a>
+              <a class="nav__phone" href="tel:+7(999)100-80-00">+7 (999) 100-80-00</a>
+              <a class="nav__email" href="mailto:info@liga.group">info@liga.group</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Ссылки на другие страницы -->
+      <div class="header__page-wrap">
+        <a class="header__center" href="/">Учебный центр</a>
+        <a class="header__security" href="/">Охрана труда</a>
+      </div>
+      <!-- Телефон -->
+      <a class="header__phone" href="tel:+7(999)100-80-00">
+        <svg class="header__phone-icon" width="16" height="16" aria-hidden="true">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        +7 (999) 100-80-00</a>
+      <!-- Открыть попап -->
+      <a class="header__popup popup-click" href="/">Провести оценку рисков</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Сайт компании ЛИГА КАЧЕСТВА</h1>
+
+    <!-- Превью компании Лиги Качества -->
+    <section class="preview">
+      <div class="preview__container container">
+        <div class="preview__wrap">
+          <!-- Заголовок -->
+          <h2 class="visually-hidden">Превью компании Лиги Качества</h2>
+          <!-- Описание -->
+          <p class="preview__title">Проведем оценку профессиональных рисков <br> <span>от 1000 руб.</span> за рабочее
+            место
+          </p>
+          <ul class="preview__list">
+            <li class="preview__item">Разработаем положение об управлении <br> профессиональными рисками.</li>
+            <li class="preview__item">Проведем идентификацию потенциально опасных ситуаций.</li>
+            <li class="preview__item">Составим реестр идентифицированных рисков.</li>
+            <li class="preview__item">Разработаем мероприятия по снижению выявленных рисков.</li>
+          </ul>
+        </div>
+        <!-- Форма консультации -->
+        <div class="preview__form-wrap">
+          <h3 class="preview__form-title">Получите консультацию специалистов по оценке профессиональных рисков</h3>
+          <form class="preview__form">
+            <!-- Имя -->
+            <div class="preview__input-wrap">
+              <input class="preview__input" id="preview-name" name="name" type="text" placeholder="Иван Иванов"
+                required>
+              <label class="preview__label" for="preview-name">Введите имя</label>
+            </div>
+            <!-- Телефон -->
+            <div class="preview__input-wrap">
+              <input class="preview__input" id="preview-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
+                required>
+              <label class="preview__label" for="preview-phone">Номер телефона</label>
+            </div>
+            <!-- Отправить -->
+            <button class="preview__submit" type="submit">Получить консультацию</button>
+          </form>
+          <!-- Соглашение -->
+          <p class="preview__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки
+            <a href="/" target="_blank">персональных данных</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Об услуге -->
+    <section class="service">
+      <div class="service__container container">
+        <!-- Заголовок -->
+        <h2 class="service__title">Что такое оценка и&nbsp;управление профессиональными рисками?</h2>
+        <!-- Список определений -->
+        <ol class="service__list">
+          <li>
+            <p>Профессиональный риск</p>
+            <p>Это вероятность причинения вреда здоровью в результате воздействия вредных и (или) опасных
+              производственных факторов при исполнении работником обязанностей по трудовому договору или в иных случаях,
+              установленных настоящим Кодексом, другими федеральными законами.</p>
+          </li>
+          <li>
+            <p>Управление профессиональными рисками</p>
+            <p>Комплекс взаимосвязанных мероприятий, являющихся элементами системы управления охраной труда и
+              включающих в себя меры по выявлению, оценке и снижению уровней профессиональных рисков.</p>
+          </li>
+          <li>
+            <p>Цель снижения уровней профессиональных рисков</p>
+            <p>Сохранение жизни и здоровья работника при исполнении им своих трудовых обязанностей.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Кому это нужно? -->
+    <section class="whom">
+      <div class="whom__container container">
+        <!-- Заголовок -->
+        <h2 class="whom__title">Кому надо проводить оценку профессиональных рисков?</h2>
+        <!-- Лид -->
+        <p class="whom__lead">Оценка профессиональных рисков – является <strong>обязательным мероприятием для любого
+            работодателя</strong> независимо от форм собственности или организационно-правовых форм и входит в систему
+          управления охраной труда (СУОТ), которую работодатель в целях реализации статьи 212 Трудового Кодекса обязан
+          обеспечить на предприятии.</p>
+      </div>
+    </section>
+
+    <!-- Оценка профессиональных рисков -->
+    <section class="field">
+      <div class="field__container container">
+        <!-- Заголовок -->
+        <h2 class="field__title">Оценка профессиональных рисков <span>1000 рублей</span> за рабочее место</h2>
+        <!-- Лид -->
+        <p class="field__lead">Просто оставьте свои контакты и&nbsp;мы&nbsp;свяжемся с Вами в ближайшее время.</p>
+        <!-- Открыть попап -->
+        <a class="field__popup popup-click" href="/">Провести оценку рисков</a>
+      </div>
+    </section>
+
+    <!-- Штрафы -->
+    <section class="fine">
+      <div class="fine__container container">
+        <!-- Заголовок -->
+        <h2 class="fine__title">Штрафы за отсутсвие оценки профессиональных рисков</h2>
+        <!-- Список штрафов -->
+        <ul class="fine__list">
+          <li>
+            ч.1 статья 5.27.1 КоАП - штраф в размере
+            <b>2.000–5.000 рублей</b>
+            для должностных лиц (руководителя) и от
+            <b>50.000-80.000 рублей</b>
+            для юридического лица.
+          </li>
+          <li>
+            Ст. 212 ТК РФ (до работника не доведена информация об условиях труда на рабочем месте) – штраф по ч. 1
+            статьи 5.27.1 КоАП в размере
+            <b>2.000–5.000 рублей</b>
+            для должностных лиц (руководителя) и от
+            <b>50.000-80.000 рублей</b>
+            для юридического лица.
+          </li>
+          <li>
+            Ст. 76, 212 ТК РФ (работник допущен к работе и не отстранен от её исполнения как не прошедший должное
+            обучение (инструктаж) по охране труда) – штраф по ч. 3 статьи 5.27.1 КоАП РФ в размере
+            <b>15.000–25.000 рублей</b>
+            для должностных лиц (руководителя) и
+            <b>110 000–130 000 рублей</b>
+            для юридического лица.
+          </li>
+          <li>
+            Ст. 57 ТК РФ (в трудовом договоре с работником не указаны условия труда
+            на рабочем месте) - штраф по ч. 4 статьи 5.27 КоАП РФ в размере
+            <b>15.000 – 25.000 рублей</b> для должностных лиц
+            (руководителя) и
+            <b>50.000–100.000 рублей</b>
+            для юридического лица
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Подробно о каждом этапе -->
+    <section class="stage" hidden>
+      <div class="stage__container container">
+        <!-- Заголовок -->
+        <h2 class="stage__title">Подробно о каждом этапе</h2>
+        <!-- ПРОПУСТИЛ -->
+      </div>
+    </section>
+
+    <!-- 4 шага для проведения оценки рисков -->
+    <section class="step">
+      <div class="step__container container">
+        <!-- Заголовок -->
+        <h2 class="step__title">4 шага для проведения оценки рисков</h2>
+        <!-- Лид -->
+        <p class="step__lead">Группа компани «Лига качества» осуществляет комплексную юридическую и консультационную
+          поддержку в
+          области охраны труда. Специалисты компании помогут Вам провести оценку профессиональных рисков в короткие
+          сроки, обеспечив 100% гарантию положительного результата.</p>
+        <!-- Список шагов -->
+        <ul class="step__list">
+          <li>
+            <h3>Заявка</h3>
+            <p>Вы оставляете завяку на проведение оценки, заполнив форму, написав нам на почту или позвонив по
+              указанному номеру</p>
+            <span>01</span>
+          </li>
+          <li>
+            <h3>Обсуждение работы</h3>
+            <p>Согласование всех необходимых условий и подписание договора</p>
+            <span>02</span>
+          </li>
+          <li>
+            <h3>Передача документов</h3>
+            <p>Передача всех необходимых документов (описать подробнее)</p>
+            <span>03</span>
+          </li>
+          <li>
+            <h3>Согласование</h3>
+            <p>Получение и согласование пакета документов </p>
+            <span>04</span>
+          </li>
+        </ul>
+        <!-- Форма расчета -->
+        <div class="step__form-wrap">
+          <!-- Заголовок -->
+          <h3 class="step__form-title">Рассчитайте стоимость оценки профессиональных рисков в вашей организации</h3>
+          <form class="step__form">
+            <!-- Рабочих мест в организации -->
+            <div class="step__input-wrap">
+              <input class="step__input" id="step-munber" name="number" min="1" type="number" placeholder="0" required>
+              <label class="step__label" for="step-number">Рабочих мест в организации</label>
+            </div>
+            <!-- Имя -->
+            <div class="step__input-wrap">
+              <input class="step__input" id="step-name" name="name" type="text" placeholder="Иван Иванов" required>
+              <label class="step__label" for="step-name">Введите имя</label>
+            </div>
+            <!-- Телефон -->
+            <div class="step__input-wrap">
+              <input class="step__input" id="step-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
+                required>
+              <label class="step__label" for="step-phone">Номер телефона</label>
+            </div>
+            <!-- Отправить -->
+            <button class="step__submit" type="submit">Рассчитать стоимость</button>
+            <!-- Соглашение -->
+            <p class="step__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
+                target="_blank">персональных
+                данных</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 причин работать с нами -->
+    <section class="cause">
+      <div class="cause__container container">
+        <!-- Заголовок -->
+        <h2 class="cause__title">6 причин работать с нами</h2>
+        <!-- Список причин -->
+        <ul class="cause__list">
+          <li>
+            <h3>Качество работы</h3>
+            <p>Выполнение работ в краткие сроки, качественно, гарантия!</p>
+          </li>
+          <li>
+            <h3>Экспертность</h3>
+            <p>Сертифицированные, штатные, дипломированные эксперты</p>
+          </li>
+          <li>
+            <h3>Честная цена</h3>
+            <p>Договорные цены в зависимости от объема работ</p>
+          </li>
+          <li>
+            <h3>Право на оказание услуг</h3>
+            <p>Аккредитация в Минтруда на оказание услуг в области охраны труда</p>
+          </li>
+          <li>
+            <h3>Полный перечень документов</h3>
+            <p>Подготовка отчетной документации в полном объеме</p>
+          </li>
+          <li>
+            <h3>Своя лаборатория</h3>
+            <p>Собственная испытательная лаборатория.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- По итогам оценки Вы получаете -->
+    <section class="get">
+      <div class="get__container container">
+        <!-- Заголовок -->
+        <h2 class="get__title">По итогам оценки Вы получаете:</h2>
+        <!-- Список полученного -->
+        <ul class="get__list">
+          <li>Экспертное заключение и отчёт по оценке рисков</li>
+          <li>Карты оценки профессиональных рисков на каждую должность</li>
+          <li>Список идентифицированных опасностей и перечень мероприятий по их снижению</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Мы любим своих клиентов, а они нас -->
+    <section class="recall" hidden>
+      <div class="recall__container container">
+        <!-- Заголовок -->
+        <h2 class="recall__title">Мы любим своих клиентов, а они нас</h2>
+        <!-- Слайдер -->
+        <div class="">
+          <!-- Назад -->
+          <button class="" type="button">
+            <svg class="" width="" height="" aria-hidden="true">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <!-- Список комментариев -->
+          <div class="">
+            <ul class="">
+              <li class="">
+                <img class="" src="img/recall-decore.jpg" alt="Отзыв">
+                <blockquote class="">
+                  <p class="">Цитата как бы придвигает к нам прошлое, при этом не-текст редуцирует сюжетный реципиент.
+                    Лексика семантически интегрирует ритмический рисунок, таким образом, очевидно, что в нашем языке
+                    царит дух карнавала, пародийного отстранения. Талант Капниста по-настоящему раскрылся в комедии
+                    «Ябеда», здесь лексика абсурдно притягивает музыкальный размер...</p>
+                  <button class="" type="button">Читать полностью</button>
+                  <cite class="">Анастасия Иванова</cite>
+                  <p class="">Директор ООО «Рога и копыта»</p>
+                </blockquote>
+              </li>
+              <li class="">
+                <img class="" src="img/recall-decore.jpg" alt="Отзыв">
+                <blockquote class="">
+                  <p class="">Цитата как бы придвигает к нам прошлое, при этом не-текст редуцирует сюжетный реципиент.
+                    Лексика семантически интегрирует ритмический рисунок, таким образом, очевидно, что в нашем языке
+                    царит дух карнавала, пародийного отстранения. Талант Капниста по-настоящему раскрылся в комедии
+                    «Ябеда», здесь лексика абсурдно притягивает музыкальный размер...</p>
+                  <button class="" type="button">Читать полностью</button>
+                  <cite class="">Анастасия Иванова</cite>
+                  <p class="">Директор ООО «Рога и копыта»</p>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+          <!-- Вперёд -->
+          <button class="" type="button">
+            <svg class="" width="" height="" aria-hidden="true">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наша цель -->
+    <section class="target">
+      <div class="target__container container">
+        <!-- Заголовок -->
+        <h2 class="target__title">Наша цель — Провести оценку профессиональных рисков и помочь вам избежать
+          нежелательных штрафов</h2>
+        <!-- Лид -->
+        <p class="target__lead">Независимо от форм собственности или организационно-правовых форм и входит в
+          ..(заменить текст, какой-то дескрипшн)</p>
+        <!-- Открыть попап -->
+        <a class="target__popup popup-click" href="/">Получить консультацию</a>
+      </div>
+    </section>
+
+    <!-- Наши клиенты и партнёры -->
+    <section class="partner" hidden>
+      <div class="partner__container container">
+        <!-- Заголовок -->
+        <h2 class="partner__title">Наши клиенты и партнёры</h2>
+        <!-- Слайдер -->
+        <div class="">
+          <!-- Назад -->
+          <button class="" type="button">
+            <svg class="" width="" height="" aria-hidden="true">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <!-- Список партнёров -->
+          <div class="">
+            <ul class="">
+              <li class=""><img src="img/partner-01.png" alt="Триал Спорт"></li>
+              <li class=""><img src="img/partner-02.png" alt="Татстрой"></li>
+              <li class=""><img src="img/partner-03.png" alt="Татспиртром"></li>
+              <li class=""><img src="img/partner-04.png" alt="ОАООЭЭ"></li>
+            </ul>
+          </div>
+          <!-- Вперёд -->
+          <button class="" type="button">
+            <svg class="" width="" height="" aria-hidden="true">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Форма консультации -->
+        <div class="">
+          <!-- Заголовок -->
+          <h2 class="">Получите бесплатную консультацию по нашим услугам</h2>
+          <form class="">
+            <!-- Имя -->
+            <div class="">
+              <input class="" id="" name="name" type="text" placeholder="Иван Иванов" required>
+              <label class="" for="">Введите имя</label>
+            </div>
+            <!-- Телефон -->
+            <div class="">
+              <input class="" id="" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+              <label class="" for="">Номер телефона</label>
+            </div>
+            <!-- Отправить -->
+            <button class="" type="submit">Получить консультацию</button>
+          </form>
+          <!-- Соглашение -->
+          <p class="">Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/" target="_blank">персональных
+              данных</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Где мы работаем  -->
+    <section class="work" hidden>
+      <div class="work__container container">
+        <!-- Заголовок -->
+        <h2 class="work__title">Где мы работаем?</h2>
+        <!-- Лид -->
+        <p class="">Предоставляем услуги в области охраны труда и сертификации в регионах</p>
+        <!-- Список городов -->
+        <dl class="">
+          <div class="">
+            <dt>Сыктывкар</dt>
+            <dd>Республика Коми</dd>
+          </div>
+          <div class="">
+            <dt>Пермь</dt>
+            <dd>Пермский край</dd>
+          </div>
+          <div class="">
+            <dt>Киров</dt>
+            <dd>Кировская область</dd>
+          </div>
+          <div class="">
+            <dt>Екатеринбург</dt>
+            <dd>Свердловская область</dd>
+          </div>
+          <div class="">
+            <dt>Ижевск</dt>
+            <dd>Удмуртская Республика</dd>
+          </div>
+          <div class="">
+            <dt>Нижний Новгород</dt>
+            <dd>Нижегородская область</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" hidden>
+      <div class="contact__container container">
+        <div class="">
+          <!-- Заголовок -->
+          <h2 class="contact__title">Контакты</h2>
+          <!-- Список городов -->
+          <ul class="">
+            <li class="">
+              <!-- Город -->
+              <h3 class="">Киров и Кировская область</h3>
+              <div class="">
+                <!-- Информация -->
+                <a class="" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="" href="/">Получить консультацию</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" hidden>
+    <div class="footer__container container">
+      <a class="" href="/"><img src="img/logo-footer.svg" alt="Логотип компании ЛИГА КАЧЕСТВА"></a>
+      <!-- Список разделов -->
+      <div class="">
+        <h2 class="">Разделы</h2>
+        <ul class="">
+          <li class=""><a class="" href="/" target="_blank">Учебный центр</a></li>
+          <li class=""><a class="" href="/" target="_blank">Охрана труда</a></li>
+        </ul>
+      </div>
+      <!-- Список о нас -->
+      <div class="">
+        <h2 class="">О нас</h2>
+        <ul class="">
+          <li class=""><a class="" href="/">О компании</a></li>
+          <li class=""><a class="" href="/">Лицензии</a></li>
+          <li class=""><a class="" href="/">Курсы</a></li>
+          <li class=""><a class="" href="/">Публикации</a></li>
+          <li class=""><a class="" href="/">Контакты</a></li>
+        </ul>
+      </div>
+      <!-- Контакты -->
+      <div class="">
+        <h2 class="">Контакты</h2>
+        <ul class="">
+          <li class=""><a class="" href="tel:+7(999)100-80-00">+7 (999) 100-80-00</a></li>
+          <li class=""><a class="" href="mailto:Info@liga.group"></a>Info@liga.group</li>
+        </ul>
+        <!-- Соцсети -->
+        <ul class="">
+          <li class="">
+            <a class="" href="/" target="_blank">
+              <span class="visually-hidden">Мы в вконтакте</span>
+              <svg class="" width="" height="" aria-hidden="true">
+                <use xlink:href="#icon-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="/" target="_blank">
+              <span class="visually-hidden">Мы в твиттере</span>
+              <svg class="" width="" height="" aria-hidden="true">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="/" target="_blank">
+              <span class="visually-hidden">Мы в скайпе</span>
+              <svg class="" width="" height="" aria-hidden="true">
+                <use xlink:href="#icon-skype"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="">
+            <a class="" href="/" target="_blank">
+              <span class="visually-hidden">Мы в фейсбуке</span>
+              <svg class="" width="" height="" aria-hidden="true">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Копирайт -->
+      <div class="">
+        <p class="">2020 © Компания «Лига Качества».</p>
+        <a class="" href="/" target="_blank">Реквизиты</a>
+        <a class="" href="/" target="_blank">Политика конфиденциальности</a>
+        <a class="" href="https://vyatka-it.ru/" target="_blank">Разработка сайта <span>Вятка IT</span></a>
+      </div>
+    </div>
+    <!-- Наверх -->
+    <button class="" type="button">
+      <svg class="" width="" height="" aria-hidden="true">
+        <use xlink:href="#icon-footer-top"></use>
+      </svg>
+    </button>
+  </footer>
+
+  <!-- Попап -->
+  <div class="popup visually-hidden">
+    <button class="popup__close" type="button">
+      <svg class="popup__icon" width="12" height="12" aria-hidden="true">
+        <use xlink:href="#icon-close-popup"></use>
+      </svg>
+    </button>
+    <!-- Форма отправки -->
+    <div class="popup__before">
+      <h2 class="popup__title">Получить консультацию специалистов</h2>
+      <p class="popup__lead">Просто оставьте свои контакты <br> и мы свяжемся с Вами в ближайшее время.</p>
+      <form class="popup__form">
+        <!-- Имя -->
+        <div class="popup__input-wrap">
+          <input class="popup__input" id="" name="name" type="text" placeholder="Иван Иванов" required>
+          <label class="popup__label" for="">Введите имя</label>
+        </div>
+        <!-- Телефон -->
+        <div class="popup__input-wrap">
+          <input class="popup__input" id="" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+          <label class="popup__label" for="">Номер телефона</label>
+        </div>
+        <!-- Отправить -->
+        <button class="popup__submit" type="submit">Получить консультацию</button>
+      </form>
+      <!-- Соглашение -->
+      <p class="popup__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки
+        <a href="/" target="_blank">персональных данных</a>
+      </p>
+    </div>
+    <!-- Сообщение об успехе -->
+    <div class="popup__after visually-hidden">
+      <p class="popup__after-title">Успех</p>
+      <p class="popup__after-lead">У тебя всё вышло</p>
+      <button class="popup__after-close" type="button">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="js/main.min.js"></script>
+  <script src="js/nav.min.js"></script>
+  <script src="js/popup.min.js"></script>
+</body>
+
+</html>
