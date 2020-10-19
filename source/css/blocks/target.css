@@ -26,8 +26,11 @@
 
 /* Title */
 .target__title {
+  position: relative;
+
   max-width: 1082px;
   margin: 0;
+  padding-top: 237px;
 
   font-weight: 600;
   font-size: 36px;
@@ -42,6 +45,20 @@
   .target__title {
     font-size: 24px;
   }
+}
+
+.target__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 300px;
+  height: 237px;
+
+  background-image: url("../img/target-decore.svg");
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
 }
 
 /* Lead */

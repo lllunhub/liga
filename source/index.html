@@ -533,35 +533,37 @@
     </section>
 
     <!-- Где мы работаем  -->
-    <section class="work" hidden>
+    <section class="work">
       <div class="work__container container">
-        <!-- Заголовок -->
-        <h2 class="work__title">Где мы работаем?</h2>
-        <!-- Лид -->
-        <p class="">Предоставляем услуги в области охраны труда и сертификации в регионах</p>
+        <div class="work__wrap">
+          <!-- Заголовок -->
+          <h2 class="work__title">Где мы работаем?</h2>
+          <!-- Лид -->
+          <p class="work__lead">Предоставляем услуги в области охраны труда и сертификации в регионах</p>
+        </div>
         <!-- Список городов -->
-        <dl class="">
-          <div class="">
+        <dl class="work__list">
+          <div class="work__item">
             <dt>Сыктывкар</dt>
             <dd>Республика Коми</dd>
           </div>
-          <div class="">
+          <div class="work__item">
             <dt>Пермь</dt>
             <dd>Пермский край</dd>
           </div>
-          <div class="">
+          <div class="work__item">
             <dt>Киров</dt>
             <dd>Кировская область</dd>
           </div>
-          <div class="">
+          <div class="work__item">
             <dt>Екатеринбург</dt>
             <dd>Свердловская область</dd>
           </div>
-          <div class="">
+          <div class="work__item">
             <dt>Ижевск</dt>
             <dd>Удмуртская Республика</dd>
           </div>
-          <div class="">
+          <div class="work__item">
             <dt>Нижний Новгород</dt>
             <dd>Нижегородская область</dd>
           </div>
@@ -570,107 +572,119 @@
     </section>
 
     <!-- Контакты -->
-    <section class="contact" hidden>
+    <section class="contact">
       <div class="contact__container container">
-        <div class="">
+        <div class="contact__wrap">
           <!-- Заголовок -->
           <h2 class="contact__title">Контакты</h2>
           <!-- Список городов -->
-          <ul class="">
-            <li class="">
+          <ul class="contact__list">
+            <li class="contact__item">
               <!-- Город -->
-              <h3 class="">Киров и Кировская область</h3>
-              <div class="">
+              <a class="contact__item-title contact__item-title--open" href="/">
+                <h3>Киров и Кировская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right visually-hidden" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap">
                 <!-- Информация -->
-                <a class="" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
-                <p class="">г. Киров, Профсоюзная 1, оф.502</p>
-                <a class="" href="mailto:info@liga.group">info@liga.group</a>
-                <p class="">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
                 <!-- Открыть попап -->
-                <a class="" href="/">Получить консультацию</a>
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
               </div>
             </li>
           </ul>
         </div>
       </div>
+      <img class="contact__image" src="img/contact-map.jpg" alt="Метка на карте">
     </section>
   </main>
 
-  <footer class="footer" hidden>
+  <footer class="footer">
     <div class="footer__container container">
-      <a class="" href="/"><img src="img/logo-footer.svg" alt="Логотип компании ЛИГА КАЧЕСТВА"></a>
+      <a class="footer__logo" href="/"><img src="img/logo-footer.svg" alt="Логотип компании ЛИГА КАЧЕСТВА"></a>
       <!-- Список разделов -->
-      <div class="">
-        <h2 class="">Разделы</h2>
-        <ul class="">
-          <li class=""><a class="" href="/" target="_blank">Учебный центр</a></li>
-          <li class=""><a class="" href="/" target="_blank">Охрана труда</a></li>
+      <div class="footer__wrap-1">
+        <h2 class="footer__title">Разделы</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="/" target="_blank">Учебный центр</a></li>
+          <li class="footer__item"><a class="footer__link" href="/" target="_blank">Охрана труда</a></li>
         </ul>
       </div>
       <!-- Список о нас -->
-      <div class="">
-        <h2 class="">О нас</h2>
-        <ul class="">
-          <li class=""><a class="" href="/">О компании</a></li>
-          <li class=""><a class="" href="/">Лицензии</a></li>
-          <li class=""><a class="" href="/">Курсы</a></li>
-          <li class=""><a class="" href="/">Публикации</a></li>
-          <li class=""><a class="" href="/">Контакты</a></li>
+      <div class="footer__wrap-2">
+        <h2 class="footer__title">О нас</h2>
+        <ul class="footer__flex-list">
+          <li class="footer__item"><a class="footer__link" href="/">О компании</a></li>
+          <li class="footer__item"><a class="footer__link" href="/">Лицензии</a></li>
+          <li class="footer__item"><a class="footer__link" href="/">Курсы</a></li>
+          <li class="footer__item"><a class="footer__link" href="/">Публикации</a></li>
+          <li class="footer__item"><a class="footer__link" href="/">Контакты</a></li>
         </ul>
       </div>
       <!-- Контакты -->
-      <div class="">
-        <h2 class="">Контакты</h2>
-        <ul class="">
-          <li class=""><a class="" href="tel:+7(999)100-80-00">+7 (999) 100-80-00</a></li>
-          <li class=""><a class="" href="mailto:Info@liga.group"></a>Info@liga.group</li>
+      <div class="footer__wrap-3">
+        <h2 class="footer__title">Контакты</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="tel:+7(999)100-80-00">+7 (999) 100-80-00</a></li>
+          <li class="footer__item"><a class="footer__link" href="mailto:Info@liga.group">Info@liga.group</a></li>
         </ul>
         <!-- Соцсети -->
-        <ul class="">
-          <li class="">
-            <a class="" href="/" target="_blank">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="/" target="_blank">
               <span class="visually-hidden">Мы в вконтакте</span>
-              <svg class="" width="" height="" aria-hidden="true">
-                <use xlink:href="#icon-vkontakte"></use>
+              <svg class="footer__social-icon" width="22" height="22" aria-hidden="true">
+                <use class="footer__social-icon-1" xlink:href="#icon-vkontakte-1"></use>
+                <use class="footer__social-icon-2" xlink:href="#icon-vkontakte-2"></use>
               </svg>
             </a>
           </li>
-          <li class="">
-            <a class="" href="/" target="_blank">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="/" target="_blank">
               <span class="visually-hidden">Мы в твиттере</span>
-              <svg class="" width="" height="" aria-hidden="true">
-                <use xlink:href="#icon-twitter"></use>
+              <svg class="footer__social-icon" width="22" height="22" aria-hidden="true">
+                <use class="footer__social-icon-1" xlink:href="#icon-twitter-1"></use>
+                <use class="footer__social-icon-2" xlink:href="#icon-twitter-2"></use>
               </svg>
             </a>
           </li>
-          <li class="">
-            <a class="" href="/" target="_blank">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="/" target="_blank">
               <span class="visually-hidden">Мы в скайпе</span>
-              <svg class="" width="" height="" aria-hidden="true">
-                <use xlink:href="#icon-skype"></use>
+              <svg class="footer__social-icon" width="22" height="22" aria-hidden="true">
+                <use class="footer__social-icon-1" xlink:href="#icon-skype-1"></use>
+                <use class="footer__social-icon-2" xlink:href="#icon-skype-2"></use>
               </svg>
             </a>
           </li>
-          <li class="">
-            <a class="" href="/" target="_blank">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="/" target="_blank">
               <span class="visually-hidden">Мы в фейсбуке</span>
-              <svg class="" width="" height="" aria-hidden="true">
-                <use xlink:href="#icon-facebook"></use>
+              <svg class="footer__social-icon" width="22" height="22" aria-hidden="true">
+                <use class="footer__social-icon-1" xlink:href="#icon-facebook-1"></use>
+                <use class="footer__social-icon-2" xlink:href="#icon-facebook-2"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
       <!-- Копирайт -->
-      <div class="">
-        <p class="">2020 © Компания «Лига Качества».</p>
-        <a class="" href="/" target="_blank">Реквизиты</a>
-        <a class="" href="/" target="_blank">Политика конфиденциальности</a>
-        <a class="" href="https://vyatka-it.ru/" target="_blank">Разработка сайта <span>Вятка IT</span></a>
+      <div class="footer__wrap-4">
+        <p class="footer__copyright">2020 © Компания «Лига Качества».</p>
+        <a class="footer__requisites" href="/" target="_blank">Реквизиты</a>
+        <a class="footer__politic" href="/" target="_blank">Политика конфиденциальности</a>
+        <a class="footer__vyatka" href="https://vyatka-it.ru/" target="_blank">Разработка сайта <span>Вятка
+            IT</span></a>
       </div>
     </div>
     <!-- Наверх -->
-    <button class="" type="button">
+    <button class="visually-hidden" type="button">
       <svg class="" width="" height="" aria-hidden="true">
         <use xlink:href="#icon-footer-top"></use>
       </svg>
