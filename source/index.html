@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<header>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Лига качества</title>
@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon.png">
-</header>
+</head>
 
 <body>
 
@@ -69,7 +69,7 @@
               </li>
             </ul>
             <!-- Кнопка показать больше -->
-            <button class="nav__page-toggle" type="button">
+            <button class="nav__page-toggle nav__page-toggle--bottom" type="button">
               <svg class="nav__page-icon" width="16" height="16" aria-hidden="true">
                 <use class="nav__page-icon-top visually-hidden" xlink:href="#icon-arrow-top"></use>
                 <use class="nav__page-icon-bottom" xlink:href="#icon-arrow-bottom"></use>
@@ -80,28 +80,28 @@
             <!-- Список страницы -->
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="/">Об услуге</a>
+                <a class="nav__link scroll" href="#service">Об услуге</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="/">Штрафы</a>
+                <a class="nav__link scroll" href="#fine">Штрафы</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="/">Подробно об этапах</a>
+                <a class="nav__link scroll" href="#stage">Подробно об этапах</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="/">Шаги для проведения оценки</a>
+                <a class="nav__link scroll" href="#step">Шаги для проведения оценки</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="/">Причины работать с нами</a>
+                <a class="nav__link scroll" href="#cause">Причины работать с нами</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="/">Отзывы</a>
+                <a class="nav__link scroll" href="#recall">Отзывы</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="/">Наши клиенты</a>
+                <a class="nav__link scroll" href="#partner">Наши клиенты</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="/">Где мы работаем</a>
+                <a class="nav__link scroll" href="#work">Где мы работаем</a>
               </li>
             </ul>
             <!-- Список других страниц -->
@@ -152,7 +152,7 @@
     <h1 class="visually-hidden">Сайт компании ЛИГА КАЧЕСТВА</h1>
 
     <!-- Превью компании Лиги Качества -->
-    <section class="preview">
+    <section class="preview" id="preview">
       <div class="preview__container container">
         <div class="preview__wrap">
           <!-- Заголовок -->
@@ -196,7 +196,7 @@
     </section>
 
     <!-- Об услуге -->
-    <section class="service">
+    <section class="service" id="service">
       <div class="service__container container">
         <!-- Заголовок -->
         <h2 class="service__title">Что такое оценка и&nbsp;управление профессиональными рисками?</h2>
@@ -222,7 +222,7 @@
     </section>
 
     <!-- Кому это нужно? -->
-    <section class="whom">
+    <section class="whom" id="whom">
       <div class="whom__container container">
         <!-- Заголовок -->
         <h2 class="whom__title">Кому надо проводить оценку профессиональных рисков?</h2>
@@ -235,7 +235,7 @@
     </section>
 
     <!-- Оценка профессиональных рисков -->
-    <section class="field">
+    <section class="field" id="field">
       <div class="field__container container">
         <!-- Заголовок -->
         <h2 class="field__title">Оценка профессиональных рисков <span>1000 рублей</span> за рабочее место</h2>
@@ -247,7 +247,7 @@
     </section>
 
     <!-- Штрафы -->
-    <section class="fine">
+    <section class="fine" id="fine">
       <div class="fine__container container">
         <!-- Заголовок -->
         <h2 class="fine__title">Штрафы за отсутсвие оценки профессиональных рисков</h2>
@@ -289,7 +289,7 @@
     </section>
 
     <!-- Подробно о каждом этапе -->
-    <section class="stage" hidden>
+    <section class="stage" id="stage" hidden>
       <div class="stage__container container">
         <!-- Заголовок -->
         <h2 class="stage__title">Подробно о каждом этапе</h2>
@@ -298,7 +298,7 @@
     </section>
 
     <!-- 4 шага для проведения оценки рисков -->
-    <section class="step">
+    <section class="step" id="step">
       <div class="step__container container">
         <!-- Заголовок -->
         <h2 class="step__title">4 шага для проведения оценки рисков</h2>
@@ -364,7 +364,7 @@
     </section>
 
     <!-- 6 причин работать с нами -->
-    <section class="cause">
+    <section class="cause" id="cause">
       <div class="cause__container container">
         <!-- Заголовок -->
         <h2 class="cause__title">6 причин работать с нами</h2>
@@ -399,7 +399,7 @@
     </section>
 
     <!-- По итогам оценки Вы получаете -->
-    <section class="get">
+    <section class="get" id="get">
       <div class="get__container container">
         <!-- Заголовок -->
         <h2 class="get__title">По итогам оценки Вы получаете:</h2>
@@ -413,7 +413,7 @@
     </section>
 
     <!-- Мы любим своих клиентов, а они нас -->
-    <section class="recall" hidden>
+    <section class="recall" id="recall" hidden>
       <div class="recall__container container">
         <!-- Заголовок -->
         <h2 class="recall__title">Мы любим своих клиентов, а они нас</h2>
@@ -465,7 +465,7 @@
     </section>
 
     <!-- Наша цель -->
-    <section class="target">
+    <section class="target" id="target">
       <div class="target__container container">
         <!-- Заголовок -->
         <h2 class="target__title">Наша цель — Провести оценку профессиональных рисков и помочь вам избежать
@@ -479,36 +479,36 @@
     </section>
 
     <!-- Наши клиенты и партнёры -->
-    <section class="partner" hidden>
-      <div class="partner__container container">
-        <!-- Заголовок -->
-        <h2 class="partner__title">Наши клиенты и партнёры</h2>
-        <!-- Слайдер -->
-        <div class="">
-          <!-- Назад -->
-          <button class="" type="button">
-            <svg class="" width="" height="" aria-hidden="true">
-              <use xlink:href="#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <!-- Список партнёров -->
-          <div class="">
-            <ul class="">
-              <li class=""><img src="img/partner-01.png" alt="Триал Спорт"></li>
-              <li class=""><img src="img/partner-02.png" alt="Татстрой"></li>
-              <li class=""><img src="img/partner-03.png" alt="Татспиртром"></li>
-              <li class=""><img src="img/partner-04.png" alt="ОАООЭЭ"></li>
-            </ul>
-          </div>
-          <!-- Вперёд -->
-          <button class="" type="button">
-            <svg class="" width="" height="" aria-hidden="true">
-              <use xlink:href="#icon-arrow-right"></use>
-            </svg>
-          </button>
+    <section class="partner" id="partner">
+      <!-- Заголовок -->
+      <h2 class="partner__title">Наши клиенты и партнёры</h2>
+      <!-- Слайдер -->
+      <div class="partner__slider">
+        <!-- Назад -->
+        <button class="partner__button" type="button">
+          <svg class="partner__icon" width="40" height="40" aria-hidden="true">
+            <use class="partner__icon-logo-1" xlink:href="#icon-arrow-left-1"></use>
+            <use class="partner__icon-logo-2" xlink:href="#icon-arrow-left-2"></use>
+          </svg>
+        </button>
+        <!-- Список партнёров -->
+        <div class="parthner__list-wrap">
+          <ul class="partner__list">
+            <li class="partner__item"><img src="img/partner-01.png" alt="Триал Спорт"></li>
+            <li class="partner__item"><img src="img/partner-02.png" alt="Татстрой"></li>
+            <li class="partner__item"><img src="img/partner-03.png" alt="Татспиртром"></li>
+            <li class="partner__item"><img src="img/partner-04.png" alt="ОАООЭЭ"></li>
+          </ul>
         </div>
+        <!-- Вперёд -->
+        <button class="partner__button" type="button">
+          <svg class="partner__icon" width="40" height="40" aria-hidden="true">
+            <use class="partner__icon-logo-1" xlink:href="#icon-arrow-right-1"></use>
+            <use class="partner__icon-logo-2" xlink:href="#icon-arrow-right-2"></use>
+          </svg>
+        </button>
         <!-- Форма консультации -->
-        <div class="">
+        <div class="" hidden>
           <!-- Заголовок -->
           <h2 class="">Получите бесплатную консультацию по нашим услугам</h2>
           <form class="">
@@ -533,7 +533,7 @@
     </section>
 
     <!-- Где мы работаем  -->
-    <section class="work">
+    <section class="work" id="work">
       <div class="work__container container">
         <div class="work__wrap">
           <!-- Заголовок -->
@@ -572,23 +572,175 @@
     </section>
 
     <!-- Контакты -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact__container container">
         <div class="contact__wrap">
           <!-- Заголовок -->
           <h2 class="contact__title">Контакты</h2>
           <!-- Список городов -->
-          <ul class="contact__list">
+          <ul class="contact__list contact__list--scroll">
             <li class="contact__item">
               <!-- Город -->
-              <a class="contact__item-title contact__item-title--open" href="/">
+              <a class="contact__item-title contact__item-title--closed" href="/">
                 <h3>Киров и Кировская область</h3>
                 <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
-                  <use class="contact__icon-right visually-hidden" xlink:href="#icon-contact-arrow-right"></use>
-                  <use class="contact__icon-left" xlink:href="#icon-contact-arrow-left"></use>
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
                 </svg>
               </a>
-              <div class="contact__item-wrap">
+              <div class="contact__item-wrap visually-hidden">
+                <!-- Информация -->
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <!-- Город -->
+              <a class="contact__item-title contact__item-title--closed" href="/">
+                <h3>Орёл и Орловская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap visually-hidden">
+                <!-- Информация -->
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <!-- Город -->
+              <a class="contact__item-title contact__item-title--closed" href="/">
+                <h3>Киров и Кировская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap visually-hidden">
+                <!-- Информация -->
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <!-- Город -->
+              <a class="contact__item-title contact__item-title--closed" href="/">
+                <h3>Киров и Кировская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap visually-hidden">
+                <!-- Информация -->
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <!-- Город -->
+              <a class="contact__item-title contact__item-title--closed" href="/">
+                <h3>Орёл и Орловская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap visually-hidden">
+                <!-- Информация -->
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <!-- Город -->
+              <a class="contact__item-title contact__item-title--closed" href="/">
+                <h3>Киров и Кировская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap visually-hidden">
+                <!-- Информация -->
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <!-- Город -->
+              <a class="contact__item-title contact__item-title--closed" href="/">
+                <h3>Киров и Кировская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap visually-hidden">
+                <!-- Информация -->
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <!-- Город -->
+              <a class="contact__item-title contact__item-title--closed" href="/">
+                <h3>Орёл и Орловская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap visually-hidden">
+                <!-- Информация -->
+                <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
+                <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
+                <a class="contact__item-email" href="mailto:info@liga.group">info@liga.group</a>
+                <p class="contact__item-time">Режим работы: <b>пн-пт:</b> 8.30-17.30 <b>сб-вс:</b> выходной</p>
+                <!-- Открыть попап -->
+                <a class="contact__popup popup-click" href="/">Получить консультацию</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <!-- Город -->
+              <a class="contact__item-title contact__item-title--closed" href="/">
+                <h3>Киров и Кировская область</h3>
+                <svg class="contact__item-icon" width="18" height="18" aria-hidden="true">
+                  <use class="contact__icon-right" xlink:href="#icon-contact-arrow-right"></use>
+                  <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
+                </svg>
+              </a>
+              <div class="contact__item-wrap visually-hidden">
                 <!-- Информация -->
                 <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
                 <p class="contact__item-address">г. Киров, Профсоюзная 1, оф.502</p>
@@ -601,7 +753,9 @@
           </ul>
         </div>
       </div>
-      <img class="contact__image" src="img/contact-map.jpg" alt="Метка на карте">
+      <div class="contact__image-wrap">
+        <img class="contact__image" src="img/contact-map.jpg" alt="Метка на карте">
+      </div>
     </section>
   </main>
 
@@ -677,18 +831,22 @@
       <!-- Копирайт -->
       <div class="footer__wrap-4">
         <p class="footer__copyright">2020 © Компания «Лига Качества».</p>
-        <a class="footer__requisites" href="/" target="_blank">Реквизиты</a>
-        <a class="footer__politic" href="/" target="_blank">Политика конфиденциальности</a>
+        <div class="footer__wrap-41">
+          <a class="footer__requisites" href="/" target="_blank">Реквизиты</a>
+          <a class="footer__politic" href="/" target="_blank">Политика конфиденциальности</a>
+        </div>
         <a class="footer__vyatka" href="https://vyatka-it.ru/" target="_blank">Разработка сайта <span>Вятка
             IT</span></a>
       </div>
     </div>
     <!-- Наверх -->
-    <button class="visually-hidden" type="button">
-      <svg class="" width="" height="" aria-hidden="true">
-        <use xlink:href="#icon-footer-top"></use>
+    <a class="footer__top-button scroll" href="#preview">
+      <svg class="footer__top" width="52" height="52" aria-hidden="true">
+        <use class="footer__top-icon-1" xlink:href="#icon-footer-top-1"></use>
+        <use class="footer__top-icon-2" xlink:href="#icon-footer-top-2"></use>
       </svg>
-    </button>
+      наверх
+    </a>
   </footer>
 
   <!-- Попап -->
@@ -731,7 +889,9 @@
 
   <script src="js/main.min.js"></script>
   <script src="js/nav.min.js"></script>
+  <script src="js/contact.min.js"></script>
   <script src="js/popup.min.js"></script>
+  <script src="js/swiper.min.js"></script>
 </body>
 
 </html>

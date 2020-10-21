@@ -76,12 +76,19 @@
   background-color: #ffffff;
   border-radius: 6px;
   box-shadow: 0 0 20px rgba(72, 80, 87, 0.04);
+
+  transition: 0.3s;
 }
 
 @media (max-width: 400px) {
   .cause__list li {
     padding: 30px 20px;
   }
+}
+
+.cause__list li:hover,
+.cause__list li:focus {
+  box-shadow: 0 0 20px rgba(72, 80, 87, 0.16);
 }
 
 /* List li h3 */
