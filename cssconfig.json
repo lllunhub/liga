@@ -12,7 +12,7 @@
   "eof-newline": true,
   "leading-zero": true,
   "quotes": "double",
-  "remove-empty-rulesets": true,
+  "remove-empty-rulesets": false,
   "sort-order-fallback": "abc",
   "space-before-colon": "",
   "space-after-colon": " ",

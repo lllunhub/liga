@@ -10,7 +10,7 @@
 
 @media (max-width: 1255px) {
   .work {
-    padding: 120px 0;
+    padding-bottom: 120px;
 
     background-size: cover;
   }
@@ -18,13 +18,13 @@
 
 @media (max-width: 767px) {
   .work {
-    padding: 80px 0;
+    padding-bottom: 80px;
   }
 }
 
 @media (max-width: 400px) {
   .work {
-    padding: 60px 0;
+    padding-bottom: 60px;
   }
 }
 

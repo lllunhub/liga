@@ -174,8 +174,7 @@
           <form class="preview__form">
             <!-- Имя -->
             <div class="preview__input-wrap">
-              <input class="preview__input" id="preview-name" name="name" type="text" placeholder="Иван Иванов"
-                required>
+              <input class="preview__input" id="preview-name" name="name" type="text" placeholder="Иван Иванов" required>
               <label class="preview__label" for="preview-name">Введите имя</label>
             </div>
             <!-- Телефон -->
@@ -348,8 +347,7 @@
             </div>
             <!-- Телефон -->
             <div class="step__input-wrap">
-              <input class="step__input" id="step-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
-                required>
+              <input class="step__input" id="step-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
               <label class="step__label" for="step-phone">Номер телефона</label>
             </div>
             <!-- Отправить -->
@@ -413,54 +411,66 @@
     </section>
 
     <!-- Мы любим своих клиентов, а они нас -->
-    <section class="recall" id="recall" hidden>
-      <div class="recall__container container">
-        <!-- Заголовок -->
-        <h2 class="recall__title">Мы любим своих клиентов, а они нас</h2>
-        <!-- Слайдер -->
-        <div class="">
-          <!-- Назад -->
-          <button class="" type="button">
-            <svg class="" width="" height="" aria-hidden="true">
-              <use xlink:href="#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <!-- Список комментариев -->
-          <div class="">
-            <ul class="">
-              <li class="">
-                <img class="" src="img/recall-decore.jpg" alt="Отзыв">
-                <blockquote class="">
-                  <p class="">Цитата как бы придвигает к нам прошлое, при этом не-текст редуцирует сюжетный реципиент.
+    <section class="recall" id="recall">
+      <!-- Заголовок -->
+      <h2 class="recall__title">Мы любим своих клиентов, а они нас</h2>
+      <!-- Слайдер -->
+      <div class="recall__slider">
+        <!-- Назад -->
+        <button class="recall__button recall__button-prev" type="button">
+          <svg class="recall__icon" width="40" height="40" aria-hidden="true">
+            <use class="recall__icon-logo-1" xlink:href="#icon-arrow-left-1"></use>
+            <use class="recall__icon-logo-2" xlink:href="#icon-arrow-left-2"></use>
+          </svg>
+        </button>
+        <!-- Список комментариев -->
+        <div class="recall__list-wrap swiper-slider">
+          <ul class="recall__list swiper-wrapper">
+            <li class="recall__item swiper-slide">
+              <img src="img/recall-decore.jpg" alt="Отзыв">
+              <blockquote class="recall__post">
+                <div>
+                  <p>Цитата как бы придвигает к нам прошлое, при этом не-текст редуцирует сюжетный реципиент.
                     Лексика семантически интегрирует ритмический рисунок, таким образом, очевидно, что в нашем языке
                     царит дух карнавала, пародийного отстранения. Талант Капниста по-настоящему раскрылся в комедии
                     «Ябеда», здесь лексика абсурдно притягивает музыкальный размер...</p>
-                  <button class="" type="button">Читать полностью</button>
-                  <cite class="">Анастасия Иванова</cite>
-                  <p class="">Директор ООО «Рога и копыта»</p>
-                </blockquote>
-              </li>
-              <li class="">
-                <img class="" src="img/recall-decore.jpg" alt="Отзыв">
-                <blockquote class="">
-                  <p class="">Цитата как бы придвигает к нам прошлое, при этом не-текст редуцирует сюжетный реципиент.
+                  <p>Цитата как бы придвигает к нам прошлое, при этом не-текст редуцирует сюжетный реципиент.
                     Лексика семантически интегрирует ритмический рисунок, таким образом, очевидно, что в нашем языке
                     царит дух карнавала, пародийного отстранения. Талант Капниста по-настоящему раскрылся в комедии
                     «Ябеда», здесь лексика абсурдно притягивает музыкальный размер...</p>
-                  <button class="" type="button">Читать полностью</button>
-                  <cite class="">Анастасия Иванова</cite>
-                  <p class="">Директор ООО «Рога и копыта»</p>
-                </blockquote>
-              </li>
-            </ul>
-          </div>
-          <!-- Вперёд -->
-          <button class="" type="button">
-            <svg class="" width="" height="" aria-hidden="true">
-              <use xlink:href="#icon-arrow-left"></use>
-            </svg>
-          </button>
+                </div>
+                <button class="recall__more" type="button">Читать полностью</button>
+                <cite class="recall__name">Анастасия Иванова</cite>
+                <p class="recall__work">Директор ООО <span>«Рога и копыта»</span></p>
+              </blockquote>
+            </li>
+            <li class="recall__item swiper-slide">
+              <img src="img/recall-decore.jpg" alt="Отзыв">
+              <blockquote class="recall__post">
+                <div>
+                  <p>Цитата как бы придвигает к нам прошлое, при этом не-текст редуцирует сюжетный реципиент.
+                    Лексика семантически интегрирует ритмический рисунок, таким образом, очевидно, что в нашем языке
+                    царит дух карнавала, пародийного отстранения. Талант Капниста по-настоящему раскрылся в комедии
+                    «Ябеда», здесь лексика абсурдно притягивает музыкальный размер...</p>
+                  <p>Цитата как бы придвигает к нам прошлое, при этом не-текст редуцирует сюжетный реципиент.
+                    Лексика семантически интегрирует ритмический рисунок, таким образом, очевидно, что в нашем языке
+                    царит дух карнавала, пародийного отстранения. Талант Капниста по-настоящему раскрылся в комедии
+                    «Ябеда», здесь лексика абсурдно притягивает музыкальный размер...</p>
+                </div>
+                <button class="recall__more" type="button">Читать полностью</button>
+                <cite class="recall__name">Анастасия Иванова</cite>
+                <p class="recall__work">Директор ООО <span>«Рога и копыта»</span></p>
+              </blockquote>
+            </li>
+          </ul>
         </div>
+        <!-- Вперёд -->
+        <button class="recall__button recall__button-next" type="button">
+          <svg class="recall__icon" width="40" height="40" aria-hidden="true">
+            <use class="recall__icon-logo-1" xlink:href="#icon-arrow-right-1"></use>
+            <use class="recall__icon-logo-2" xlink:href="#icon-arrow-right-2"></use>
+          </svg>
+        </button>
       </div>
     </section>
 
@@ -485,50 +495,61 @@
       <!-- Слайдер -->
       <div class="partner__slider">
         <!-- Назад -->
-        <button class="partner__button" type="button">
+        <button class="partner__button partner__button-prev" type="button">
           <svg class="partner__icon" width="40" height="40" aria-hidden="true">
             <use class="partner__icon-logo-1" xlink:href="#icon-arrow-left-1"></use>
             <use class="partner__icon-logo-2" xlink:href="#icon-arrow-left-2"></use>
           </svg>
         </button>
         <!-- Список партнёров -->
-        <div class="parthner__list-wrap">
-          <ul class="partner__list">
-            <li class="partner__item"><img src="img/partner-01.png" alt="Триал Спорт"></li>
-            <li class="partner__item"><img src="img/partner-02.png" alt="Татстрой"></li>
-            <li class="partner__item"><img src="img/partner-03.png" alt="Татспиртром"></li>
-            <li class="partner__item"><img src="img/partner-04.png" alt="ОАООЭЭ"></li>
+        <div class="partner__list-wrap swiper-container">
+          <ul class="partner__list swiper-wrapper">
+            <li class="partner__item swiper-slide"><img src="img/partner-01.png" alt="Триал Спорт"></li>
+            <li class="partner__item swiper-slide"><img src="img/partner-02.png" alt="Татстрой"></li>
+            <li class="partner__item swiper-slide"><img src="img/partner-03.png" alt="Татспиртром"></li>
+            <li class="partner__item swiper-slide"><img src="img/partner-04.png" alt="ОАООЭЭ"></li>
+            <li class="partner__item swiper-slide"><img src="img/partner-01.png" alt="Триал Спорт"></li>
+            <li class="partner__item swiper-slide"><img src="img/partner-02.png" alt="Татстрой"></li>
+            <li class="partner__item swiper-slide"><img src="img/partner-03.png" alt="Татспиртром"></li>
+            <li class="partner__item swiper-slide"><img src="img/partner-04.png" alt="ОАООЭЭ"></li>
           </ul>
         </div>
         <!-- Вперёд -->
-        <button class="partner__button" type="button">
+        <button class="partner__button partner__button-next" type="button">
           <svg class="partner__icon" width="40" height="40" aria-hidden="true">
             <use class="partner__icon-logo-1" xlink:href="#icon-arrow-right-1"></use>
             <use class="partner__icon-logo-2" xlink:href="#icon-arrow-right-2"></use>
           </svg>
         </button>
-        <!-- Форма консультации -->
-        <div class="" hidden>
-          <!-- Заголовок -->
-          <h2 class="">Получите бесплатную консультацию по нашим услугам</h2>
-          <form class="">
-            <!-- Имя -->
-            <div class="">
-              <input class="" id="" name="name" type="text" placeholder="Иван Иванов" required>
-              <label class="" for="">Введите имя</label>
-            </div>
-            <!-- Телефон -->
-            <div class="">
-              <input class="" id="" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
-              <label class="" for="">Номер телефона</label>
-            </div>
-            <!-- Отправить -->
-            <button class="" type="submit">Получить консультацию</button>
-          </form>
+      </div>
+      <!-- Форма расчета -->
+      <div class="partner__form-wrap">
+        <!-- Заголовок -->
+        <h3 class="partner__form-title">Рассчитайте стоимость оценки профессиональных рисков в вашей организации</h3>
+        <form class="partner__form">
+          <!-- Рабочих мест в организации -->
+          <div class="partner__input-wrap">
+            <input class="partner__input" id="partner-munber" name="number" min="1" type="number" placeholder="0" required>
+            <label class="partner__label" for="partner-number">Рабочих мест в организации</label>
+          </div>
+          <!-- Имя -->
+          <div class="partner__input-wrap">
+            <input class="partner__input" id="partner-name" name="name" type="text" placeholder="Иван Иванов" required>
+            <label class="partner__label" for="partner-name">Введите имя</label>
+          </div>
+          <!-- Телефон -->
+          <div class="partner__input-wrap">
+            <input class="partner__input" id="partner-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
+              required>
+            <label class="partner__label" for="partner-phone">Номер телефона</label>
+          </div>
+          <!-- Отправить -->
+          <button class="partner__submit" type="submit">Рассчитать стоимость</button>
           <!-- Соглашение -->
-          <p class="">Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/" target="_blank">персональных
+          <p class="partner__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
+              target="_blank">персональных
               данных</a></p>
-        </div>
+        </form>
       </div>
     </section>
 
@@ -891,7 +912,8 @@
   <script src="js/nav.min.js"></script>
   <script src="js/contact.min.js"></script>
   <script src="js/popup.min.js"></script>
-  <script src="js/swiper.min.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="js/more.min.js"></script>
 </body>
 
 </html>
