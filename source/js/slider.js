@@ -1,6 +1,14 @@
 (() => {
   const partnerList = document.querySelector(`.partner__list-wrap`);
   const recallList = document.querySelector(`.recall__list-wrap`);
+  const stageList = document.querySelector(`.stage__slider`);
+  const dotsList = document.querySelector(`.stage__array`);
+
+  let dots = [];
+
+  for (let i = 0; i < dotsList.children.length; i++) {
+    dots.push(dotsList.children[i].innerHTML);
+  }
 
   let slider1 = new Swiper(partnerList, {
     slidesPerView: 1,
@@ -32,6 +40,23 @@
     navigation: {
       nextEl: `.recall__button-next`,
       prevEl: `.recall__button-prev`,
+    }
+  });
+
+  let slider3 = new Swiper(stageList, {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    a11y: false,
+    navigation: {
+      nextEl: `.stage__button-next`,
+      prevEl: `.stage__button-prev`,
+    },
+    pagination: {
+      el: `.stage__dots`,
+      clickable: `true`,
+      renderBullet: function(index, className) {
+        return `<li class="` + className + `">` + (dots[index]) + `</li>`;
+      }
     }
   });
 })();

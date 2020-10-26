@@ -170,26 +170,34 @@
         </div>
         <!-- Форма консультации -->
         <div class="preview__form-wrap">
-          <h3 class="preview__form-title">Получите консультацию специалистов по оценке профессиональных рисков</h3>
-          <form class="preview__form">
-            <!-- Имя -->
-            <div class="preview__input-wrap">
-              <input class="preview__input" id="preview-name" name="name" type="text" placeholder="Иван Иванов" required>
-              <label class="preview__label" for="preview-name">Введите имя</label>
-            </div>
-            <!-- Телефон -->
-            <div class="preview__input-wrap">
-              <input class="preview__input" id="preview-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
-                required>
-              <label class="preview__label" for="preview-phone">Номер телефона</label>
-            </div>
-            <!-- Отправить -->
-            <button class="preview__submit" type="submit">Получить консультацию</button>
-          </form>
-          <!-- Соглашение -->
-          <p class="preview__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки
-            <a href="/" target="_blank">персональных данных</a>
-          </p>
+          <div class="preview__before">
+            <h3 class="preview__form-title">Получите консультацию специалистов по оценке профессиональных рисков</h3>
+            <form class="preview__form">
+              <!-- Имя -->
+              <div class="preview__input-wrap">
+                <input class="preview__input" id="preview-name" name="name" type="text" placeholder="Иван Иванов" required>
+                <label class="preview__label" for="preview-name">Введите имя</label>
+              </div>
+              <!-- Телефон -->
+              <div class="preview__input-wrap">
+                <input class="preview__input" id="preview-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
+                  required>
+                <label class="preview__label" for="preview-phone">Номер телефона</label>
+              </div>
+              <!-- Отправить -->
+              <button class="preview__submit" type="submit">Получить консультацию</button>
+            </form>
+            <!-- Соглашение -->
+            <p class="preview__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки
+              <a href="/" target="_blank">персональных данных</a>
+            </p>
+          </div>
+          <div class="preview__after visually-hidden">
+            <p class="preview__after-title">Спасибо за доверие!</p>
+            <p class="preview__after-lead">Мы уже получили заявку <br> и скоро свяжемся с Вами.
+              <br> Пожалуйста, оставайтесь на связи! </p>
+            <button class="preview__after-close" type="button">Спасибо</button>
+          </div>
         </div>
       </div>
     </section>
@@ -288,11 +296,125 @@
     </section>
 
     <!-- Подробно о каждом этапе -->
-    <section class="stage" id="stage" hidden>
-      <div class="stage__container container">
-        <!-- Заголовок -->
-        <h2 class="stage__title">Подробно о каждом этапе</h2>
-        <!-- ПРОПУСТИЛ -->
+    <section class="stage" id="stage">
+      <ul class="stage__array visually-hidden">
+        <li>Подготовка <br> и планирование</li>
+        <li>Идентификация <br> опасностей</li>
+        <li>Сертификат <br> ГОСТ Р</li>
+        <li>Оценка <br> эффективности СИЗ</li>
+        <li>Интегральная оценка <br> условий труда</li>
+        <li>Оценка <br> рисков</li>
+        <li>Мониторинг <br> рисков</li>
+      </ul>
+      <!-- Заголовок -->
+      <h2 class="stage__title">Подробно о каждом этапе</h2>
+      <!-- Слайдер -->
+      <div class="stage__dots-wrap">
+        <ol class="stage__dots"></ol>
+      </div>
+      <div class="stage__slider swiper-container">
+        <ul class="stage__list swiper-wrapper">
+          <li class="stage__item swiper-slide">
+            <h3>Этап, включающий организационно-подготовительные работы:</h3>
+            <ul>
+              <li>Формирование аттестационной комиссии;</li>
+              <li>Составление графика проведения работ;</li>
+              <li>Формирование комплекта необходимых нормативно правовых и локальных нормативных актов;</li>
+              <li>Составление перечня рабочих мест, подлежащих оценки;</li>
+              <li>Разработка предложений и замечаний (при необходимости);</li>
+              <li>Разработка перечня мер по снижению профессиональных рисков и мероприятий по улучшению труда;</li>
+              <li>Разработка программы мониторинга улучшения условий труда и снижения высоких и средних рисков.</li>
+            </ul>
+          </li>
+          <li class="stage__item swiper-slide">
+            <h3>Этап, включающий организационно-подготовительные работы:</h3>
+            <ul>
+              <li>Формирование аттестационной комиссии;</li>
+              <li>Составление графика проведения работ;</li>
+              <li>Формирование комплекта необходимых нормативно правовых и локальных нормативных актов;</li>
+              <li>Составление перечня рабочих мест, подлежащих оценки;</li>
+              <li>Разработка предложений и замечаний (при необходимости);</li>
+              <li>Разработка перечня мер по снижению профессиональных рисков и мероприятий по улучшению труда;</li>
+              <li>Разработка программы мониторинга улучшения условий труда и снижения высоких и средних рисков.</li>
+            </ul>
+          </li>
+          <li class="stage__item swiper-slide">
+            <h3>Этап, включающий организационно-подготовительные работы:</h3>
+            <ul>
+              <li>Формирование аттестационной комиссии;</li>
+              <li>Составление графика проведения работ;</li>
+              <li>Формирование комплекта необходимых нормативно правовых и локальных нормативных актов;</li>
+              <li>Составление перечня рабочих мест, подлежащих оценки;</li>
+              <li>Разработка предложений и замечаний (при необходимости);</li>
+              <li>Разработка перечня мер по снижению профессиональных рисков и мероприятий по улучшению труда;</li>
+              <li>Разработка программы мониторинга улучшения условий труда и снижения высоких и средних рисков.</li>
+            </ul>
+          </li>
+          <li class="stage__item swiper-slide">
+            <h3>Этап, включающий организационно-подготовительные работы:</h3>
+            <ul>
+              <li>Формирование аттестационной комиссии;</li>
+              <li>Составление графика проведения работ;</li>
+              <li>Формирование комплекта необходимых нормативно правовых и локальных нормативных актов;</li>
+              <li>Составление перечня рабочих мест, подлежащих оценки;</li>
+              <li>Разработка предложений и замечаний (при необходимости);</li>
+              <li>Разработка перечня мер по снижению профессиональных рисков и мероприятий по улучшению труда;</li>
+              <li>Разработка программы мониторинга улучшения условий труда и снижения высоких и средних рисков.</li>
+            </ul>
+          </li>
+          <li class="stage__item swiper-slide">
+            <h3>Этап, включающий организационно-подготовительные работы:</h3>
+            <ul>
+              <li>Формирование аттестационной комиссии;</li>
+              <li>Составление графика проведения работ;</li>
+              <li>Формирование комплекта необходимых нормативно правовых и локальных нормативных актов;</li>
+              <li>Составление перечня рабочих мест, подлежащих оценки;</li>
+              <li>Разработка предложений и замечаний (при необходимости);</li>
+              <li>Разработка перечня мер по снижению профессиональных рисков и мероприятий по улучшению труда;</li>
+              <li>Разработка программы мониторинга улучшения условий труда и снижения высоких и средних рисков.</li>
+            </ul>
+          </li>
+          <li class="stage__item swiper-slide">
+            <h3>Этап, включающий организационно-подготовительные работы:</h3>
+            <ul>
+              <li>Формирование аттестационной комиссии;</li>
+              <li>Составление графика проведения работ;</li>
+              <li>Формирование комплекта необходимых нормативно правовых и локальных нормативных актов;</li>
+              <li>Составление перечня рабочих мест, подлежащих оценки;</li>
+              <li>Разработка предложений и замечаний (при необходимости);</li>
+              <li>Разработка перечня мер по снижению профессиональных рисков и мероприятий по улучшению труда;</li>
+              <li>Разработка программы мониторинга улучшения условий труда и снижения высоких и средних рисков.</li>
+            </ul>
+          </li>
+          <li class="stage__item swiper-slide">
+            <h3>Этап, включающий организационно-подготовительные работы:</h3>
+            <ul>
+              <li>Формирование аттестационной комиссии;</li>
+              <li>Составление графика проведения работ;</li>
+              <li>Формирование комплекта необходимых нормативно правовых и локальных нормативных актов;</li>
+              <li>Составление перечня рабочих мест, подлежащих оценки;</li>
+              <li>Разработка предложений и замечаний (при необходимости);</li>
+              <li>Разработка перечня мер по снижению профессиональных рисков и мероприятий по улучшению труда;</li>
+              <li>Разработка программы мониторинга улучшения условий труда и снижения высоких и средних рисков.</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="stage__buttons">
+          <!-- Назад -->
+          <button class="stage__button stage__button-prev" type="button">
+            <svg class="stage__icon" width="40" height="40" aria-hidden="true">
+              <use class="stage__icon-logo-1" xlink:href="#icon-arrow-left-1"></use>
+              <use class="stage__icon-logo-2" xlink:href="#icon-arrow-left-2"></use>
+            </svg>
+          </button>
+          <!-- Вперед -->
+          <button class="stage__button stage__button-next" type="button">
+            <svg class="stage__icon" width="40" height="40" aria-hidden="true">
+              <use class="stage__icon-logo-1" xlink:href="#icon-arrow-right-1"></use>
+              <use class="stage__icon-logo-2" xlink:href="#icon-arrow-right-2"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -333,30 +455,40 @@
         <!-- Форма расчета -->
         <div class="step__form-wrap">
           <!-- Заголовок -->
-          <h3 class="step__form-title">Рассчитайте стоимость оценки профессиональных рисков в вашей организации</h3>
-          <form class="step__form">
-            <!-- Рабочих мест в организации -->
-            <div class="step__input-wrap">
-              <input class="step__input" id="step-munber" name="number" min="1" type="number" placeholder="0" required>
-              <label class="step__label" for="step-number">Рабочих мест в организации</label>
-            </div>
-            <!-- Имя -->
-            <div class="step__input-wrap">
-              <input class="step__input" id="step-name" name="name" type="text" placeholder="Иван Иванов" required>
-              <label class="step__label" for="step-name">Введите имя</label>
-            </div>
-            <!-- Телефон -->
-            <div class="step__input-wrap">
-              <input class="step__input" id="step-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
-              <label class="step__label" for="step-phone">Номер телефона</label>
-            </div>
-            <!-- Отправить -->
-            <button class="step__submit" type="submit">Рассчитать стоимость</button>
-            <!-- Соглашение -->
-            <p class="step__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
-                target="_blank">персональных
-                данных</a></p>
-          </form>
+          <div class="step__before">
+            <h3 class="step__form-title">Рассчитайте стоимость оценки профессиональных рисков в вашей организации</h3>
+            <form class="step__form">
+              <!-- Рабочих мест в организации -->
+              <div class="step__input-wrap">
+                <input class="step__input" id="step-munber" name="number" min="1" type="number" placeholder="0" required>
+                <label class="step__label" for="step-number">Рабочих мест в организации</label>
+              </div>
+              <!-- Имя -->
+              <div class="step__input-wrap">
+                <input class="step__input" id="step-name" name="name" type="text" placeholder="Иван Иванов" required>
+                <label class="step__label" for="step-name">Введите имя</label>
+              </div>
+              <!-- Телефон -->
+              <div class="step__input-wrap">
+                <input class="step__input" id="step-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
+                  required>
+                <label class="step__label" for="step-phone">Номер телефона</label>
+              </div>
+              <!-- Отправить -->
+              <button class="step__submit" type="submit">Рассчитать стоимость</button>
+              <!-- Соглашение -->
+              <p class="step__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
+                  target="_blank">персональных
+                  данных</a></p>
+            </form>
+          </div>
+          <div class="step__after visually-hidden">
+            <p class="step__after-title">Мы получили Вашу заявку!</p>
+            <p class="step__after-lead">В ближайшее время мы перезвоним Вам
+              <br> и сообщим стоимость оценки профессиональных
+              рисков в вашей организации </p>
+            <button class="step__after-close" type="button">Спасибо</button>
+          </div>
         </div>
       </div>
     </section>
@@ -524,32 +656,34 @@
       </div>
       <!-- Форма расчета -->
       <div class="partner__form-wrap">
-        <!-- Заголовок -->
-        <h3 class="partner__form-title">Рассчитайте стоимость оценки профессиональных рисков в вашей организации</h3>
-        <form class="partner__form">
-          <!-- Рабочих мест в организации -->
-          <div class="partner__input-wrap">
-            <input class="partner__input" id="partner-munber" name="number" min="1" type="number" placeholder="0" required>
-            <label class="partner__label" for="partner-number">Рабочих мест в организации</label>
-          </div>
-          <!-- Имя -->
-          <div class="partner__input-wrap">
-            <input class="partner__input" id="partner-name" name="name" type="text" placeholder="Иван Иванов" required>
-            <label class="partner__label" for="partner-name">Введите имя</label>
-          </div>
-          <!-- Телефон -->
-          <div class="partner__input-wrap">
-            <input class="partner__input" id="partner-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
-              required>
-            <label class="partner__label" for="partner-phone">Номер телефона</label>
-          </div>
-          <!-- Отправить -->
-          <button class="partner__submit" type="submit">Рассчитать стоимость</button>
-          <!-- Соглашение -->
-          <p class="partner__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
-              target="_blank">персональных
-              данных</a></p>
-        </form>
+        <div class="partner__before">
+          <!-- Заголовок -->
+          <h3 class="partner__form-title">Получите бесплатную консультацию по нашим услугам</h3>
+          <form class="partner__form">
+            <!-- Имя -->
+            <div class="partner__input-wrap">
+              <input class="partner__input" id="partner-name" name="name" type="text" placeholder="Иван Иванов" required>
+              <label class="partner__label" for="partner-name">Введите имя</label>
+            </div>
+            <!-- Телефон -->
+            <div class="partner__input-wrap">
+              <input class="partner__input" id="partner-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__"
+                required>
+              <label class="partner__label" for="partner-phone">Номер телефона</label>
+            </div>
+            <!-- Отправить -->
+            <button class="partner__submit" type="submit">Рассчитать стоимость</button>
+            <!-- Соглашение -->
+            <p class="partner__consent">Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
+                target="_blank">персональных
+                данных</a></p>
+          </form>
+        </div>
+        <div class="partner__after visually-hidden">
+          <p class="partner__after-title">Мы получили Вашу заявку!</p>
+          <p class="partner__after-lead">В ближайшее время мы перезвоним Вам и проконсультируем по всем вопросам.</p>
+          <button class="partner__after-close" type="button">Спасибо</button>
+        </div>
       </div>
     </section>
 
@@ -902,9 +1036,10 @@
     </div>
     <!-- Сообщение об успехе -->
     <div class="popup__after visually-hidden">
-      <p class="popup__after-title">Успех</p>
-      <p class="popup__after-lead">У тебя всё вышло</p>
-      <button class="popup__after-close" type="button">Закрыть</button>
+      <p class="popup__after-title">Спасибо за доверие!</p>
+      <p class="popup__after-lead">Мы уже получили заявку <br> и скоро свяжемся с Вами.
+        <br> Пожалуйста, оставайтесь на связи!</p>
+      <button class="popup__after-close" type="button">Спасибо</button>
     </div>
   </div>
 

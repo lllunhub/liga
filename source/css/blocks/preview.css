@@ -97,6 +97,8 @@
 
 /* Form Wrao */
 .preview__form-wrap {
+  position: relative;
+
   display: grid;
   padding: 30px 20px;
 
@@ -251,4 +253,84 @@
 
 .preview__consent a {
   color: unset;
+}
+
+/* After */
+.preview__after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  align-content: start;
+  width: 100%;
+  height: 100%;
+  padding: 0 25px;
+
+  background-color: #ffffff;
+}
+
+/* Title */
+.preview__after-title {
+  margin: 0;
+  margin-bottom: 12px;
+  padding-top: 128px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+/* Lead */
+.preview__after-lead {
+  margin: 0;
+  margin-bottom: 90px;
+
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #737c81;
+}
+
+/* Button */
+.preview__after-close {
+  width: 100%;
+  max-width: 284px;
+  margin-top: 14px;
+  margin-bottom: 12px;
+  padding: 12px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #393d43;
+
+  background-color: #f7b519;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  justify-self: center;
+}
+
+@media (max-width: 329px) {
+  .preview__after-close {
+    font-size: 16px;
+  }
+}
+
+.preview__after-close:hover,
+.preview__after-close:focus {
+  background-color: #f7b519;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+.preview__after-close:active {
+  background-color: #f7b513;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
 }
