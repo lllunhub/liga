@@ -11,6 +11,9 @@
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon.png">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=06e4b199-4a20-40a5-987f-8d91f2f84176&lang=ru_RU"
+    type="text/javascript">
+  </script>
 </head>
 
 <body>
@@ -743,6 +746,8 @@
                   <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
                 </svg>
               </a>
+              <span class="contact__map-first visually-hidden">58.616074</span>
+              <span class="contact__map-second visually-hidden">49.683860</span>
               <div class="contact__item-wrap visually-hidden">
                 <!-- Информация -->
                 <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
@@ -762,6 +767,8 @@
                   <use class="contact__icon-left visually-hidden" xlink:href="#icon-contact-arrow-left"></use>
                 </svg>
               </a>
+              <span class="contact__map-first visually-hidden">57.616074</span>
+              <span class="contact__map-second visually-hidden">49.683860</span>
               <div class="contact__item-wrap visually-hidden">
                 <!-- Информация -->
                 <a class="contact__item-phone" href="tel:+7(999)100-80-00">+7(999)100-80-00</a>
@@ -908,6 +915,7 @@
           </ul>
         </div>
       </div>
+      <div class="contact__yandex" id="map" style="height: 714px"></div>
       <div class="contact__image-wrap">
         <img class="contact__image" src="img/contact-map.jpg" alt="Метка на карте">
       </div>
@@ -1049,6 +1057,7 @@
   <script src="js/popup.min.js"></script>
   <script src="js/slider.min.js"></script>
   <script src="js/more.min.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>

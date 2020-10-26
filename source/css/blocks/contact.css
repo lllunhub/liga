@@ -8,11 +8,15 @@
 
 /* Container */
 .contact__container {
+  position: relative;
+
   display: grid;
 }
 
 /* Wrap */
 .contact__wrap {
+  z-index: 1;
+
   display: grid;
   align-content: start;
   width: 100%;
@@ -385,4 +389,14 @@
   background-image: url("../img/map-pin.svg");
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
+}
+
+/* Yandex */
+.contact__yandex {
+  position: absolute;
+  top: 0;
+  /* z-index: 1; */
+
+  width: 100%;
+  min-height: 714px;
 }
